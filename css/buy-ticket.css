@@ -1,0 +1,117 @@
+* body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #D9D9D9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.popup {
+    background: bisque;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.popup h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-group input[type="email"],
+.form-group input[type="date"] {
+    width: 60%;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+}
+
+.counter button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.counter button:hover {
+    background: blanchedalmond; 
+}
+
+.counter .count {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 30px;
+    text-align: center;
+}
+
+.form-group-total {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.amound {
+    color: rgb(64, 108, 231);
+}
+
+.ticket-info {
+    font-size: 14px;
+    line-height: 1.5;
+    background: blanchedalmond;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.submit-btn {
+    background: rgb(64, 108, 231);
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: rgb(64, 108, 231);
+}
+
+.
+   

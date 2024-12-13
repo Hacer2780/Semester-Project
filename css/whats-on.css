@@ -1,0 +1,82 @@
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.events h2 {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.events p {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.filter-options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-options select {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.event {
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.event .details {
+  flex-grow: 1;
+}
+
+.event .details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.event .details p {
+  margin-bottom: 15px;
+}
+
+.event .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.event .buttons button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.event .buttons button:hover {
+  background-color: black;
+}

@@ -1,0 +1,65 @@
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+}
+
+.hero h2 {
+  font-size: 30px;
+}
+.hero img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+.hero p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.hero button {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.info .opening-hours ul {
+  list-style: none;
+}
+
+.info img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  padding: 2rem;
+}
+
+.feature {
+  text-align: center;
+  width: 30%;
+}
+
+.feature img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+

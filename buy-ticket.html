@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Visiting Ticket</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/buy-ticket.css" />
+  </head>
+  <body>
+    <div class="popup">
+      <h1>Buy Visiting Ticket</h1>
+      <form action="">
+        <div class="form-group">
+          <label for="date">When</label>
+          <input type="date" id="date" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="">Adult</label>
+          <div class="counter">
+            <button type="button" class="minus">-</button>
+            <span class="count">0</span>
+            <button type="button" class="plus">+</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+            <label for="">Child (0-17 years)</label>
+            <div class="counter">
+              <button type="button" class="minus">-</button>
+              <span class="count">0</span>
+              <button type="button" class="plus">+</button>
+            </div>
+          </div>
+
+        <div class="form-group-total">
+          <label for="">Total</label>
+          <span class="amound">€0</span>
+        </div>
+
+        <div class="ticket-info">
+          <p><strong>Ticket information</strong></p>
+          <br />
+          <p>
+            General Admission: Tickets are required for all visitors. Discounts
+            available for specific groups.Students: Reduced rates with a valid
+            student ID.
+          </p>
+          <br />
+          <p>Children: Special pricing for children under 17.</p>
+          <br />
+          <p>
+            Teachers: Free entry for educators with a valid teacher ID (advance
+            registration required).
+          </p>
+          <br />
+          <p>
+            Researchers: Complimentary access upon presentation of valid
+            credentials.
+          </p>
+          <br />
+          <p>
+            Special Events and Workshops: May require additional tickets. Please
+            check event details.
+          </p>
+        </div>
+
+        <button type="submit" class="submit-btn">Buy Ticket</button>
+      </form>
+    </div>
+  </body>
+</html>
