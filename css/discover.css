@@ -76,6 +76,57 @@ main {
 }
 
 .card-content button:hover {
-    background-color: #0056b3;
+    background-color: white;
+    color: #3FA752;
 }
 
+/*Responsive Styles*/
+
+/* Responsive Tasarım: 600px ve Altı */
+
+@media (max-width:768px) {
+    .card {
+        flex-direction: column;
+        padding: 10px;
+        margin: 15px;
+    }
+
+    .card:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        border-radius: 8px;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .card-content h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .card-content p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .card-content .time-description {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .card-content button {
+        font-size: 1rem;
+        padding: 10px 15px;
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+        border-radius: 5px;
+    }
+}
