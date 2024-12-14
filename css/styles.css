@@ -6,7 +6,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     color: black;
     background-color: #D9D9D9;   
 }
@@ -15,6 +14,7 @@ header {
     background: #222;
     color: #fff;
     padding: 1rem 0;
+    position: relative;
 }
 
 
@@ -77,6 +77,20 @@ nav ul li a:hover {
     color: #fff;
 }
 
+.menu-toogle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toogle .bar {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+
+}
+
 .btn {
     width: 200px;
     height: 45px;
@@ -137,7 +151,7 @@ footer {
 
 
 
-/* REsponsive Styles Mobil and Tablet */
+/* Rsponsive Styles  */
 
 @media (max-width:768px) {
     .footer-grid {
@@ -159,6 +173,41 @@ footer {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
 }
+
+
+
 
 

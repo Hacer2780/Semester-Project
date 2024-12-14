@@ -7,7 +7,9 @@
     background-size: cover;
     background-position: center;
     color: white;
+    padding: 20px;
     text-align: left
+
 }
 
 .hero h1 {
@@ -34,38 +36,28 @@
 
 .intro-section{
     background-image: url(../assets/img/Sky.jpg);
-    padding: 30px;
+    margin-top: 20px;
+    color: aliceblue;
+}
+.intro-section h2{
+    margin: 20px ;
+    padding-top: 20px;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.intro-text{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 300px;
-    margin-top: 40px;
-}
-.intro-text {
-    
-    left: 10%;
-    bottom: 10%;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    max-width: 50%;
-    
 }
 
-.intro-text h2 {
-    margin: 0;
-    font-size: 36px;
+.intro-text p{
+    width: 60%;
+    padding: 20px;
+    font-size: 28px;
 }
 
-.intro-text p {
-    margin: 10px 0 20px;
-    font-size: 18px;
-}
-
-.intro-text .btn {
-    background-color: rgb(231, 14, 14);
-    color:black;
-    right: 10%;
-    bottom: 10%;
+.intro-section .btn{
+    margin: auto 20px 20px auto;
 
 }
 
@@ -80,43 +72,49 @@
 
 .workshop-text h3 {
     font-size: 36px;
+    font-size: 2rem;
 }
 
 .workshop-text p {
-    font-size: 24;
+    font-size: 1.2rem;
+    margin: 10px 0;
 }
 
-.workshop-section {
+.workshop-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
     padding-bottom: 40px;
+    align-items: f;
 }
 
 .workshop {
     position: relative;
     text-align: center;
+    margin: 10px;
 }
 
 .workshop img {
-    width: 350px;
-    height: 450px;
-    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    min-height: 400px;
     aspect-ratio: 3/2;
     border-radius: 50px;
-    
+    margin: 0;   
 }
 
 .workshop h3 {
     position: absolute;
     top: 30px;
-    border-top-left-radius: 10px;
-    margin: 0;
+    left: 30px;
+    padding: 10px 15px;   
     color: white;
+    border-radius: 5px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     text-align: left;
-    left: 30px;
+    
 }
 
 .workshop .btn {
@@ -126,4 +124,59 @@
     transform: translateX(-50%);
     background-color: #064099;
     color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.workshop .btn:hover {
+    background-color: #042c66;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .workshop-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .workshop img {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .workshop h3 {
+        font-size: 1.5rem;
+    }
+
+    .workshop .btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+    .intro-section{
+        padding: 20px;
+    }
+
+    .intro-section h2{
+        
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    .intro-text{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .intro-text p{
+        width: 90%;
+        font-size: 16px;
+    }
+    
+    .intro-section .btn{
+        margin: auto;
+    
+    }
 }
