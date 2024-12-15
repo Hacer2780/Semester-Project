@@ -118,7 +118,7 @@
     
 }
 
-.card .card-btn {
+/* .card .card-btn {
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -135,7 +135,7 @@
     background-color: aliceblue;
     color: #3FA752;
 }
-
+ */
 @media (max-width: 600px) {
     
     .hero h1 {
