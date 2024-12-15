@@ -51,7 +51,7 @@
     margin-bottom: 2rem;
   }
   
-  h2 {
+  h1 {
     margin-bottom: 1rem;
     color: #222;
   }
@@ -86,3 +86,49 @@
     list-style: none;
   }
   
+  @media (max-width: 768px) {
+    header .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem 1rem;
+    }
+
+    header .logo-section img {
+        height: 40px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}

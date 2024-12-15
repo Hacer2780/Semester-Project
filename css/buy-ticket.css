@@ -112,6 +112,21 @@
 .submit-btn:hover {
     background: rgb(64, 108, 231);
 }
+ @media (max-width:768) {
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
 
-.
-   
+    .features {
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+ 
