@@ -13,26 +13,70 @@ body {
 header {
     background: #222;
     color: #fff;
-    padding: 20px 20px;
-    margin-bottom: 20px;
+    padding: 15px 20px;
+   
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center; 
+    max-width: 1200px;
+    max-width: 0 auto;  
 }
 
 .logo-section {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .logo {
     border-radius: 50%;
+    width: 80px;
     height: 80px;
     object-fit: cover;
+    flex-shrink: 0;
+}
+
+.logo-section p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #aaa;
+}
+
+.buy-ticket {
+    background-color: #3FA752;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.buy-ticket:hover {
+    background-color: #444;
+    color: #fff;
 }
 
 .hamburger-menu {
@@ -49,57 +93,7 @@ header {
     transition: all 0.3s;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;  
-}
-
-nav ul li {
-    line-height: 50px;
-    width: 150px;
-    height: 50px;
-    text-align: center;
-    padding: 5px 10px;   
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #aaa;
-}
-
-.buy-ticket {
-    background-color: #3FA752;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
-}
-.buy-ticket:hover {
-    background-color: #444;
-    color: #fff;
-}
-
-.menu-toogle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.menu-toogle .bar {
-    background-color: white;
-    height: 3px;
-    width: 25px;
-    margin: 3px 0;
-
-}
-
-.btn {
+/* .btn {
     width: 200px;
     height: 45px;
     border-radius: 50px;
@@ -113,7 +107,7 @@ nav ul li a:hover {
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
-}
+} */
 
 footer {
     width: 100%;
@@ -160,16 +154,29 @@ footer {
 /* Rsponsive Styles  */
 
 @media (max-width:600px) {
+    nav ul {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #333;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    nav ul.show {
+        display: flex; 
+    }
+
     .hamburger-menu {
         display: flex;
     }
 
-    .nav-section {
-        display: none;
-
+    .logo-section p {
+        font-size: 1rem;
     }
     
-
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 15px;
