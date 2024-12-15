@@ -1,132 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Community Science Museum - Discover interactive exhibits and workshops that inspire curiosity in science.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Community Science Museum - Discover interactive exhibits and workshops that inspire curiosity in science."
+    />
     <title>Home|Community Science Museum</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/index.css"> 
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <!--Header-->
     <header>
-        <div class="header-container">
+      <div class="header-top">
 
-            <section class="logo-section">
-                <img src="./assets/img/logo.jpg" alt="Community Science Museum Logo" class="logo">
-                <p>Community<br>Science<br>Museum</p>
-            </section>
-            
-            <nav class="nav-section">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="discover.html">Discover</a></li>
-                    <li><a href="whats-on.html">What`s On</a></li>
-                    <li><a href="plan-your-visit.html">Plan Your Visit</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="buy-ticket.html" class="buy-ticket" target="_blank">Buy Ticket</a></li>
-                </ul>
-            </nav>    
-        </div> 
+        <div class="logo-container">
+          <div class="logo-img">
+            <a href="index.html">
+                <img
+                  src="./assets/img/logo.jpg"
+                  alt="Community Science Museum Logo"
+                  class="logo"
+                /></a>
+          </div>
+            <h1>Community Science Museum</h1>
+          
+        </div>
+
+        <div class="buy-ticket">
+            <a href="buy-ticket.html" target="_blank">Buy Ticket</a>
+        </div>
+      </div>
+      
+      <nav class="nav-section">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="whats-on.html">What`s On</a></li>
+          <li><a href="plan-your-visit.html">Plan Your Visit</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+        </ul>
+      </nav>
+
+      <input type="checkbox" id="mobil-kontrol" />
+
+      <label for="mobil-kontrol" class="bar-icon">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <label for="mobil-kontrol" class="x-icon">
+        <i class="fa-solid fa-x"></i>
+      </label>
+
+      <div class="mobil-nav">
+        <ul class="mobil-menus">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="whats-on.html">What`s On</a></li>
+            <li><a href="plan-your-visit.html">Plan Your Visit</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+        </ul>
+      </div>
     </header>
     <!--Header Finish-->
     <!--Main-->
     <main>
-    <section class="hero">
-        <h1>Discover, Learn, and Be<br>Inspired</h1>
-        <p>Your Journey into the World of Science  <span style="color: #43D25E ;">Starts Here!</span></p>
-    </section>
-    <section class="intro-section">
-        <h2>Welcome to The Community<br>Science Museum</h2>
+      <section class="hero">
+        <h1>Discover, Learn, and Be<br />Inspired</h1>
+        <p>
+          Your Journey into the World of Science
+          <span style="color: #43d25e">Starts Here!</span>
+        </p>
+      </section>
+      <section class="intro-section">
+        <h2>Welcome to The Community<br />Science Museum</h2>
         <div class="intro-text">
-            <p>
-            Where learning is an Adventure!
-            Dive into interactive exhibits, meet dinosaurs, and uncover the mysteries 
-            of the cosmos, biology, robotics, and more. Designed for young explorers aged 7-15 and their Families, 
-            our museum brings science to life through hands-on experiences and exciting events. Start your journey 
-            today and ignite your curiosity. Science is Waiting for you!
-            </p>
-            <a href="/discover.html" class="btn">Join Workshop</a>      
+          <p>
+            Where learning is an Adventure! Dive into interactive exhibits, meet
+            dinosaurs, and uncover the mysteries of the cosmos, biology,
+            robotics, and more. Designed for young explorers aged 7-15 and their
+            Families, our museum brings science to life through hands-on
+            experiences and exciting events. Start your journey today and ignite
+            your curiosity. Science is Waiting for you!
+          </p>
+          <a href="/discover.html" class="btn">Join Workshop</a>
         </div>
-        
-    </section>
+      </section>
 
-    <section class="card-section">
+      <section class="card-section">
         <h3>Discover the wonders of science!</h3>
         <p>Explore, learn, and get hands-on with experiments and exhibits.</p>
         <div class="card-container">
-            <div class="card">
-                <img src="./assets/img/boy.jpg" alt="">
-                <h3>Young Explorers Workshop</h3>
-                <a href="discover.html" class="card-btn" target="_blank">Learn More</a>
-            </div>
-            <div class="card">
-                <img src="./assets/img/vr.jpg" alt="">
-                <h3>Robotics and Coding for Kids</h3>
-                <a href="discover.html" class="card-btn" target="_blank">Learn More</a>
-            </div>
-            <div class="card">
-                <img src="./assets/img/heart.jpg" alt="">
-                <h3>The History of Medicine</h3>
-                <a href="discover.html" class="card-btn" target="_blank">Learn More</a>
-            </div>
-            <div class="card">
-                <img src="./assets/img/teacher 2.jpg" alt="">
-                <h3>Teachers Training Program</h3>
-                <a href="discover.html" class="card-btn">Learn More</a>
-            </div>
+          <div class="card">
+            <img src="./assets/img/boy.jpg" alt="" />
+            <h3>Young Explorers Workshop</h3>
+            <a href="discover.html" class="card-btn" target="_blank"
+              >Learn More</a
+            >
+          </div>
+          <div class="card">
+            <img src="./assets/img/vr.jpg" alt="" />
+            <h3>Robotics and Coding for Kids</h3>
+            <a href="discover.html" class="card-btn" target="_blank"
+              >Learn More</a
+            >
+          </div>
+          <div class="card">
+            <img src="./assets/img/heart.jpg" alt="" />
+            <h3>The History of Medicine</h3>
+            <a href="discover.html" class="card-btn" target="_blank"
+              >Learn More</a
+            >
+          </div>
+          <div class="card">
+            <img src="./assets/img/teacher 2.jpg" alt="" />
+            <h3>Teachers Training Program</h3>
+            <a href="discover.html" class="card-btn">Learn More</a>
+          </div>
         </div>
-    </section>              
-    </main> 
+      </section>
+    </main>
     <!--Main Finish-->
     <!--Footer-->
     <footer>
-        <div class="footer-grid">
-            <div class="footer-column">
-                <h4>Opening Hours</h4>
-                <p>
-                    Tuesday - Thursday: 10:00 - 16:00<br>
-                    Friday: 10:00 - 19:00<br>
-                    Saturday: 9:00 - 16:00<br>
-                    Sunday: 9:00 - 13:00<br>
-                    Monday: Closed<br>
-                </p>
-            </div>
-            <div class="footer-column">
-                <h4>Quick Menu</h4>
-                <p>
-                    <a href="index.html">Home</a><br>
-                    <a href="discover.html">Discover</a><br>
-                    <a href="whats-on.html">What`s On</a><br>
-                    <a href="plan-your-visit.html">Plan Your Visit</a><br>
-                    <a href="about-us.html">About Us</a><br>
-                    <a href="buy-ticket.html">Buy Ticket</a><br>  
-                </p>
-            </div>
-            <div class="footer-column">
-                <h4>Upcoming Courses</h4>
-                <p>
-                    <a href="discover.html" target="_blank">Young Explorers Workshop</a><br>
-                    <a href="discover.html" target="_blank">Holiday Science Club</a><br>
-                    <a href="discover.html" target="_blank">Teacher`s Training</a><br>
-                    <a href="discover.html" target="_blank">Robotic and Coding For Kids</a><br>
-                    <a href="discover.html" target="_blank">Dinosaur Discovery</a><br>
-                    <a href="discover.html" target="_blank">Space Exploration Workshop</a><br>
-                </p>
-            </div>
-            <div class="footer-column">
-                <h4>Social Media</h4>
-                <p>
-                    <a href="https://nb-no.facebook.com/" target="_blank">Facebook</a><br>
-                    <a href="https://www.instagram.com/" target="_blank">Instagram</a><br>
-                    <a href="https://x.com/" target="_blank">Twitter</a><br>
-                    <a href="https://www.whatsapp.com/" target="_blank">WhatsApp</a><br>
-                </p>
-            </div>
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4>Opening Hours</h4>
+          <p>
+            Tuesday - Thursday: 10:00 - 16:00<br />
+            Friday: 10:00 - 19:00<br />
+            Saturday: 9:00 - 16:00<br />
+            Sunday: 9:00 - 13:00<br />
+            Monday: Closed<br />
+          </p>
         </div>
-        <p>Design and Programming: Community Science Museum</p>
+        <div class="footer-column">
+          <h4>Quick Menu</h4>
+          <p>
+            <a href="index.html">Home</a><br />
+            <a href="discover.html">Discover</a><br />
+            <a href="whats-on.html">What`s On</a><br />
+            <a href="plan-your-visit.html">Plan Your Visit</a><br />
+            <a href="about-us.html">About Us</a><br />
+            <a href="buy-ticket.html">Buy Ticket</a><br />
+          </p>
+        </div>
+        <div class="footer-column">
+          <h4>Upcoming Courses</h4>
+          <p>
+            <a href="discover.html" target="_blank">Young Explorers Workshop</a
+            ><br />
+            <a href="discover.html" target="_blank">Holiday Science Club</a
+            ><br />
+            <a href="discover.html" target="_blank">Teacher`s Training</a><br />
+            <a href="discover.html" target="_blank"
+              >Robotic and Coding For Kids</a
+            ><br />
+            <a href="discover.html" target="_blank">Dinosaur Discovery</a><br />
+            <a href="discover.html" target="_blank"
+              >Space Exploration Workshop</a
+            ><br />
+          </p>
+        </div>
+        <div class="footer-column">
+          <h4>Social Media</h4>
+          <p>
+            <a href="https://nb-no.facebook.com/" target="_blank">Facebook</a
+            ><br />
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a
+            ><br />
+            <a href="https://x.com/" target="_blank">Twitter</a><br />
+            <a href="https://www.whatsapp.com/" target="_blank">WhatsApp</a
+            ><br />
+          </p>
+        </div>
+      </div>
+      <p>Design and Programming: Community Science Museum</p>
     </footer>
-    <!--Footer Finish-->    
-</body>
+    <!--Footer Finish-->
+  </body>
 </html>
