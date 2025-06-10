@@ -8,38 +8,32 @@ This project is a static website built for a fictional science museum. The site 
 - CSS
 
 ## Features
-- Multiple fully responsive pages
-- Semantic HTML5 structure
-- Custom design and layout without using any CSS frameworks
-- Focus on accessibility and ease of navigation
+- Fully responsive design for mobile, tablet, and desktop
+- Semantic HTML structure with correct use of `<main>`, `<header>`, `<nav>`, `<section>`, and `<footer>`
+- Modular CSS architecture (page-specific styles + base `styles.css`)
+- Meta descriptions added for SEO
+- Accessible navigation (WCAG improvements, proper contrast, labels, and skip links)
+- Interactive "Buy Ticket" form with counters
+- Course detail pages with form validation
+- Hamburger menu with toggle functionality and overlay on small screens
+- Footer consistent across all pages with quick links, opening hours, and social media
 
-## Project Structure
-- `/index.html` – Home page
-- `/about-us.html` – Museum introduction
-- `/discover.html` – Exhibition content
-- `/courseyoung.html`, `/courseteacher.html`, etc. – Pages for different audiences
-- `/buy-ticket.html`, `/plan-your-visit.html` – Visitor information
 
-## Feedback Summary
-- ✅ Well-structured files and folders
-- ✅ Semantic and bug-free HTML
-- ✅ Generally responsive layout
-- ✅ Good planning and documentation
-- ❗ Repetitive CSS, could benefit from DRY principle
-- ❗ Some pages missing meta descriptions
-- ❗ Image responsiveness issues on mobile
-- ❗ Accessibility issues detected (WCAG report)
-- ❗ Project board could reflect project progress more clearly
+## Feedback Implemented
+✅ CSS files modularized using DRY principles  
+✅ Meta descriptions added for all pages  
+✅ Mobile image issues fixed using `object-fit: cover` and responsive sizing  
+✅ WCAG issues resolved (contrast, labels, form elements)  
+✅ All pages updated with `<main>` element and correct semantic tags  
+✅ Footer and header unified across all pages  
+✅ README and reflection texts updated to match new structure  
 
-## Improvements Planned
-- Consolidate and optimize CSS files
-- Add missing meta descriptions
-- Fix image proportions with `object-fit: cover`
-- Resolve accessibility issues flagged by WCAG testing tools
-- Update project board for better task tracking
+## Reflection
+This project was significantly improved based on feedback. I completely restructured the HTML to follow semantic and accessible standards. I split CSS into page-specific files and created a shared global stylesheet. Meta tags, proper image handling, and form improvements were applied. Mobile navigation was rebuilt with working toggle states and overlay. The ticket page was made interactive. Each change was carefully documented and committed.
+
 
 ## Live Site
-(Not deployed yet)
+https://science-museum-semester1.netlify.app/
 
 ## Author
 Hacer Aslan (GitHub: Hacer2780)
