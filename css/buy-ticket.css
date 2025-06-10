@@ -1,129 +1,146 @@
-* body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #D9D9D9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+ body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #D9D9D9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .popup {
-    background: bisque;
-    padding: 20px 30px;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 400px;
+  background: #fff9f0;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
 }
 
 .popup h1 {
-    font-size: 22px;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #222;
 }
 
 .form-group {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
 .form-group label {
-    font-size: 16px;
-    font-weight: bold;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .form-group input[type="email"],
 .form-group input[type="date"] {
-    width: 60%;
-    padding: 8px;
-    border: 1px solid white;
-    border-radius: 5px;
-    font-size: 14px;
+  flex: 1;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .counter {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }
 
 .counter button {
-    width: 30px;
-    height: 30px;
-    border: none;
-    background: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 50%;
-    font-weight: bold;
-    transition: background 0.3s;
+  width: 30px;
+  height: 30px;
+  background: #eee;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
 .counter button:hover {
-    background: blanchedalmond; 
+  background: #f0dcb9;
 }
 
 .counter .count {
-    margin: 0 10px;
-    font-size: 16px;
-    font-weight: bold;
-    width: 30px;
-    text-align: center;
+  min-width: 20px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .form-group-total {
-    font-size: 18px;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  color: #333;
 }
 
 .amound {
-    color: rgb(64, 108, 231);
+  color: #406ce7;
 }
 
 .ticket-info {
-    font-size: 14px;
-    line-height: 1.5;
-    background: blanchedalmond;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 30px;
-    text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  background: #fff2db;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  text-align: left;
+  color: #333;
 }
 
 .submit-btn {
-    background: rgb(64, 108, 231);
-    color: white;
-    font-size: 16px;
-    border: none;
-    padding: 10px 20px;
-    width: 100%;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
+  background: #406ce7;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 .submit-btn:hover {
-    background: rgb(64, 108, 231);
+  background: #2f56c5;
 }
- @media (max-width:768) {
-    .hero-container {
-        grid-template-columns: 1fr;
-    }
 
-    .features {
-        flex-direction: column;
-    }
+@media (max-width: 600px) {
+  .popup {
+    padding: 1.2rem;
+  }
 
-    nav ul {
-        display: none;
-    }
+  .popup h1 {
+    font-size: 1.4rem;
+  }
 
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-group input[type="email"],
+  .form-group input[type="date"] {
+    width: 100%;
+  }
+
+  .form-group-total {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ticket-info {
+    font-size: 0.85rem;
+  }
 }
- 

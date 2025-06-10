@@ -1,84 +1,88 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+  --primary-color: #2A8c46;
+  --dark-bg: #222;
+  --light-bg: #D9D9D9;
+  --text-light: aliceblue;
+  --font-main: Arial, sans-serif;
+  --radius-large: 50px;
 }
-html{
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #D9D9D9;  
-    overflow-x: hidden;
+  font-family: var(--font-main);
+  background-color: var(--light-bg);
+  overflow-x: hidden;
 }
 
+/* Header */
 header {
   position: relative;
   width: 100%;
-  height: auto;
-  background:#222;
-  padding: 30px
-
+  background: var(--dark-bg);
+  padding: 30px;
 }
 
-.header-top{
+.header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header .logo-container{
+.logo-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 10px;
 }
 
-header a .logo{
-  position: relative;
+.logo {
   width: 100px;
-  height: auto;
   border-radius: 50%;
 }
 
-.logo-container h1{
+.logo-container h1 {
   font-size: 28px;
-  color: aliceblue;
-  font-family: Arial, Helvetica, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: var(--text-light);
   font-weight: bolder;
-  width: 100px;
 }
 
-.buy-ticket a{
+.buy-ticket a {
   padding: 20px 40px;
-  border-radius: 50px;
+  border-radius: var(--radius-large);
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
-  color: aliceblue;
-  background-color: #2A8c46;
-}
-.buy-ticket a:hover{
-  color: #2A8c46;
-  background-color: aliceblue;
-
+  color: var(--text-light);
+  background-color: var(--primary-color);
 }
 
-.nav-section ul{
+.buy-ticket a:hover {
+  background-color: var(--text-light);
+  color: var(--primary-color);
+}
+
+/* Navigation */
+.nav-section ul {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 16px;
-  list-style-type: none;
-  
+  list-style: none;
 }
 
-.nav-section ul li a{
+.nav-section ul li a {
   text-decoration: none;
-  color: aliceblue;
+  color: var(--text-light);
   font-size: 16px;
   background-color: #565252;
   border-radius: 12px;
@@ -86,184 +90,153 @@ header a .logo{
   margin-right: 10px;
 }
 
-.nav-section ul li a:hover{
-  background-color: #2A8c46;
+.nav-section ul li a:hover {
+  background-color: var(--primary-color);
 }
 
-#mobil-kontrol{
+/* Mobile Nav */
+#mobil-kontrol {
   display: none;
 }
 
-.bar-icon{
-  display: none;
-  position: absolute;
-  top: 35px;
-  right: 20px;
-  font-size: 50px;
-  cursor: pointer;
-  color: #2A8c46;
-}
-
-#mobil-kontrol:checked ~ .x-icon {
-  display: block;
-  opacity: 1;
-}
-
-.x-icon{
+.bar-icon,
+.x-icon {
   display: none;
   position: absolute;
   top: 35px;
   right: 20px;
   font-size: 50px;
   cursor: pointer;
-  color: #2A8c46;
+  color: var(--primary-color);
+}
+
+.x-icon {
   transition: opacity 0.3s ease;
 }
-
-
 
 .mobil-nav {
   background-color: #444;
   display: none;
   flex-direction: column;
   width: 50vw;
-  height: auto;
-  top: -35px;
-  left: 220px;
-  opacity: 1;
-  transition: right 0.5s ease-in-out, opacity 0.5s ease-in-out;
   border-radius: 8px;
-  z-index: 10000;
   padding: 20px;
   position: relative;
+  z-index: 10000;
 }
 
+#mobil-kontrol:checked ~ .x-icon,
 #mobil-kontrol:checked ~ .mobil-nav {
+  display: block;
   opacity: 1;
 }
 
-.mobil-menus{
-  position: relative;
+.mobil-menus {
   display: flex;
   flex-direction: column;
-
 }
-.mobil-menus li{
+
+.mobil-menus li {
+  list-style: none;
   padding: 10px;
-  list-style-type: none;
 }
 
 .mobil-menus a {
-  color: aliceblue;
+  color: var(--text-light);
   text-decoration: none;
   font-size: 24px;
-  
 }
-
 
 .mobil-nav a:hover {
-  border-bottom: 3px solid;
-  border-color: #2A8c46;
-
+  border-bottom: 3px solid var(--primary-color);
 }
 
+/* Footer */
 footer {
-    width: 100%;
-    background-color: #222;
-    color: white;
-    padding: 20px 10px;
-    text-align: center;
-    box-sizing: border-box;
+  background-color: var(--dark-bg);
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
 }
 
 .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-column {
-    background-color: #444;
-    padding: 15px;
-    border-radius: 5px;
-    text-align: left
+  background-color: #444;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: left;
 }
 
 .footer-column h4 {
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    color: #2A8c46;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: var(--primary-color);
 }
 
 .footer-column p,
 .footer-column a {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    color: white;
-    text-decoration: none;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: white;
+  text-decoration: none;
 }
 
 .footer-column a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* Rsponsive Styles  */
-
-@media (max-width:600px) {
-
-  .buy-ticket a, .nav-section ul{
+/* Responsive */
+@media (max-width: 600px) {
+  .buy-ticket a,
+  .nav-section ul {
     display: none;
   }
 
   header {
-    width: 100%;
     height: 110px;
     padding: 8px;
   }
 
-  header a .logo{
+  .logo {
     width: 70px;
   }
 
-  .logo-container h1{
+  .logo-container h1 {
     font-size: 18px;
   }
 
+  .bar-icon,
+  .x-icon {
+    display: block;
+  }
 
-    
-    .bar-icon, .x-icon{
-      display: block;
-    }
-    .mobil-nav{
-      display: flex;
-    }
-  
-    .x-icon, .mobil-nav{
-      opacity: 0;
-    }
-  
-    #mobil-kontrol:checked ~ .bar-icon {
-      opacity: 0;
-    }
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
+  .mobil-nav {
+    display: flex;
+  }
 
-    .footer-column {
-        top: center;
-    }
+  .x-icon,
+  .mobil-nav {
+    opacity: 0;
+  }
 
-    .footer-column p,
-    .footer-column a {
-        font-size: 0.85rem;
-    }
+  #mobil-kontrol:checked ~ .bar-icon {
+    opacity: 0;
+  }
 
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .footer-column p,
+  .footer-column a {
+    font-size: 0.85rem;
+  }
 }
-
-
-
-
-

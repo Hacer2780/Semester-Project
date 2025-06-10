@@ -1,4 +1,4 @@
-.container {
+/* .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -90,4 +90,124 @@
     font-size: 1rem;
     cursor: pointer;
     width: 100%;
+} */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.course-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.course-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.course-header p {
+  font-size: 1rem;
+  color: #525050;
+}
+
+.course-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.course-description {
+  flex: 1;
+}
+
+.course-description h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.course-description p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.course-description img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.signup-form {
+  flex: 1;
+  max-width: 400px;
+  background-color: #cac9c9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.signup-form p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .course-details {
+    flex-direction: column;
+  }
+
+  .signup-form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .course-description {
+    margin-right: 0;
+  }
 }
